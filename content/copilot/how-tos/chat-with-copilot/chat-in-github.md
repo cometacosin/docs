@@ -20,6 +20,8 @@ redirect_from:
   - /copilot/how-tos/use-chat/use-chat-in-github
   - /copilot/how-tos/chat-with-copilot/use-chat-in-github
 contentType: how-tos
+category: 
+  - Author and optimize with Copilot
 ---
 
 ## Introduction
@@ -52,7 +54,7 @@ Depending on the question you ask, and your enterprise and organization settings
 1. To start a new conversation, click {% data reusables.copilot.pencil-paper-icon %} at the top left of the page.
 1. To see a list of your previous conversations, click {% octicon "sidebar-collapse" aria-label="Open sidebar" %} at the top left of the page.
 
-{% data variables.copilot.copilot_chat_short %} retains each conversation for up to 28 days from the last activity. After 28 days, the conversation is permanently deleted. You can view up to 100 previous conversations.
+{% data variables.copilot.copilot_chat_short %} stores up to 100 of your most recent conversations. Messages within each conversation are kept for 28 days before being permanently deleted. Once a conversation has no messages left, it's automatically removed from your history.
 
 ### Viewing and editing generated files within {% data variables.copilot.copilot_chat_short %}
 
@@ -184,7 +186,7 @@ You can access {% data variables.product.prodname_copilot_short %}'s immersive v
 1. Go to the dashboard at [https://github.com](https://github.com).
 1. In the prompt box, type a question and press <kbd>Enter</kbd>.
 
-   ![Screenshot of the dashboard with the "Ask Copilot" box highlighted with an orange outline.](/assets/images/help/copilot/copilot-chat-dashboard.png)
+   ![Screenshot of the dashboard with the Copilot Chat prompt box.](/assets/images/help/copilot/copilot-chat-dashboard.png)
 
    You will be taken to the immersive view where {% data variables.product.prodname_copilot_short %} responds to your request.
 

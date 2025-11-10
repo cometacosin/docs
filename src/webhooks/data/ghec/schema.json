@@ -39387,6 +39387,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -40104,6 +40105,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -40737,6 +40739,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -41370,6 +41373,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -42003,6 +42007,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -42670,6 +42675,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -43303,6 +43309,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -43987,6 +43994,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -44620,6 +44628,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -45253,6 +45262,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -45892,6 +45902,7 @@
                   "type": "string",
                   "name": "author_association",
                   "description": "<p>How the author is associated with the repository.</p>",
+                  "isRequired": true,
                   "enum": [
                     "COLLABORATOR",
                     "CONTRIBUTOR",
@@ -47983,6 +47994,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -48616,6 +48628,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -49511,6 +49524,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -50195,6 +50209,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -50828,6 +50843,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -51471,6 +51487,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -52112,6 +52129,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -52776,6 +52794,7 @@
               "type": "string",
               "name": "author_association",
               "description": "<p>How the author is associated with the repository.</p>",
+              "isRequired": true,
               "enum": [
                 "COLLABORATOR",
                 "CONTRIBUTOR",
@@ -119426,6 +119445,384 @@
       ],
       "action": "unblocked",
       "category": "org_block"
+    }
+  },
+  "organization_custom_property": {
+    "created": {
+      "descriptionHtml": "<p>A new organization custom property was created.</p>",
+      "summaryHtml": "<p>This event occurs when there is activity relating to an organization custom property.</p>",
+      "bodyParameters": [
+        {
+          "type": "string",
+          "name": "action",
+          "in": "body",
+          "description": "",
+          "isRequired": true,
+          "enum": [
+            "created"
+          ],
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "definition",
+          "in": "body",
+          "description": "<p>Custom property defined for an organization</p>",
+          "isRequired": true,
+          "childParamsGroups": [
+            {
+              "type": "string",
+              "name": "property_name",
+              "description": "<p>The name of the property</p>"
+            },
+            {
+              "type": "string",
+              "name": "url",
+              "description": "<p>The URL that can be used to fetch, update, or delete info about this property via the API.</p>"
+            },
+            {
+              "type": "string",
+              "name": "source_type",
+              "description": "<p>The source type of the property</p>",
+              "enum": [
+                "organization",
+                "enterprise"
+              ]
+            },
+            {
+              "type": "string",
+              "name": "value_type",
+              "description": "<p>The type of the value for the property</p>",
+              "enum": [
+                "string",
+                "single_select",
+                "multi_select",
+                "true_false"
+              ]
+            },
+            {
+              "type": "boolean",
+              "name": "required",
+              "description": "<p>Whether the property is required.</p>"
+            },
+            {
+              "type": "null or string or array",
+              "name": "default_value",
+              "description": "<p>Default value of the property</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "description",
+              "description": "<p>Short description of the property</p>"
+            },
+            {
+              "type": "array of strings or null",
+              "name": "allowed_values",
+              "description": "<p>An ordered list of the allowed values of the property.\nThe property can have up to 200 allowed values.</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "values_editable_by",
+              "description": "<p>Who can edit the values of the property</p>",
+              "enum": [
+                "enterprise_actors",
+                "enterprise_and_org_actors",
+                null
+              ]
+            }
+          ]
+        },
+        {
+          "type": "object",
+          "name": "enterprise",
+          "in": "body",
+          "description": "<p>An enterprise on GitHub. Webhook payloads contain the <code>enterprise</code> property when the webhook is configured\non an enterprise account or an organization that's part of an enterprise account. For more information,\nsee \"<a href=\"https://docs.github.com/enterprise-cloud@latest//admin/overview/about-enterprise-accounts\">About enterprise accounts</a>.\"</p>",
+          "isRequired": true,
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "sender",
+          "in": "body",
+          "description": "<p>A GitHub user.</p>",
+          "childParamsGroups": []
+        }
+      ],
+      "availability": [
+        "business"
+      ],
+      "action": "created",
+      "category": "organization_custom_property"
+    },
+    "deleted": {
+      "descriptionHtml": "<p>An organization custom property was deleted.</p>",
+      "summaryHtml": "<p>This event occurs when there is activity relating to an organization custom property.</p>",
+      "bodyParameters": [
+        {
+          "type": "string",
+          "name": "action",
+          "in": "body",
+          "description": "",
+          "isRequired": true,
+          "enum": [
+            "deleted"
+          ],
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "definition",
+          "in": "body",
+          "description": "",
+          "isRequired": true,
+          "childParamsGroups": [
+            {
+              "type": "string",
+              "name": "property_name",
+              "description": "<p>The name of the property that was deleted.</p>",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "type": "object",
+          "name": "enterprise",
+          "in": "body",
+          "description": "<p>An enterprise on GitHub. Webhook payloads contain the <code>enterprise</code> property when the webhook is configured\non an enterprise account or an organization that's part of an enterprise account. For more information,\nsee \"<a href=\"https://docs.github.com/enterprise-cloud@latest//admin/overview/about-enterprise-accounts\">About enterprise accounts</a>.\"</p>",
+          "isRequired": true,
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "installation",
+          "in": "body",
+          "description": "<p>The GitHub App installation. Webhook payloads contain the <code>installation</code> property when the event is configured\nfor and sent to a GitHub App. For more information,\nsee \"<a href=\"https://docs.github.com/enterprise-cloud@latest//apps/creating-github-apps/registering-a-github-app/using-webhooks-with-github-apps\">Using webhooks with GitHub Apps</a>.\"</p>",
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "sender",
+          "in": "body",
+          "description": "<p>A GitHub user.</p>",
+          "childParamsGroups": []
+        }
+      ],
+      "availability": [
+        "business"
+      ],
+      "action": "deleted",
+      "category": "organization_custom_property"
+    },
+    "updated": {
+      "descriptionHtml": "<p>An organization custom property was updated.</p>",
+      "summaryHtml": "<p>This event occurs when there is activity relating to an organization custom property.</p>",
+      "bodyParameters": [
+        {
+          "type": "string",
+          "name": "action",
+          "in": "body",
+          "description": "",
+          "isRequired": true,
+          "enum": [
+            "updated"
+          ],
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "definition",
+          "in": "body",
+          "description": "<p>Custom property defined for an organization</p>",
+          "isRequired": true,
+          "childParamsGroups": [
+            {
+              "type": "string",
+              "name": "property_name",
+              "description": "<p>The name of the property</p>"
+            },
+            {
+              "type": "string",
+              "name": "url",
+              "description": "<p>The URL that can be used to fetch, update, or delete info about this property via the API.</p>"
+            },
+            {
+              "type": "string",
+              "name": "source_type",
+              "description": "<p>The source type of the property</p>",
+              "enum": [
+                "organization",
+                "enterprise"
+              ]
+            },
+            {
+              "type": "string",
+              "name": "value_type",
+              "description": "<p>The type of the value for the property</p>",
+              "enum": [
+                "string",
+                "single_select",
+                "multi_select",
+                "true_false"
+              ]
+            },
+            {
+              "type": "boolean",
+              "name": "required",
+              "description": "<p>Whether the property is required.</p>"
+            },
+            {
+              "type": "null or string or array",
+              "name": "default_value",
+              "description": "<p>Default value of the property</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "description",
+              "description": "<p>Short description of the property</p>"
+            },
+            {
+              "type": "array of strings or null",
+              "name": "allowed_values",
+              "description": "<p>An ordered list of the allowed values of the property.\nThe property can have up to 200 allowed values.</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "values_editable_by",
+              "description": "<p>Who can edit the values of the property</p>",
+              "enum": [
+                "enterprise_actors",
+                "enterprise_and_org_actors",
+                null
+              ]
+            }
+          ]
+        },
+        {
+          "type": "object",
+          "name": "enterprise",
+          "in": "body",
+          "description": "<p>An enterprise on GitHub. Webhook payloads contain the <code>enterprise</code> property when the webhook is configured\non an enterprise account or an organization that's part of an enterprise account. For more information,\nsee \"<a href=\"https://docs.github.com/enterprise-cloud@latest//admin/overview/about-enterprise-accounts\">About enterprise accounts</a>.\"</p>",
+          "isRequired": true,
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "installation",
+          "in": "body",
+          "description": "<p>The GitHub App installation. Webhook payloads contain the <code>installation</code> property when the event is configured\nfor and sent to a GitHub App. For more information,\nsee \"<a href=\"https://docs.github.com/enterprise-cloud@latest//apps/creating-github-apps/registering-a-github-app/using-webhooks-with-github-apps\">Using webhooks with GitHub Apps</a>.\"</p>",
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "sender",
+          "in": "body",
+          "description": "<p>A GitHub user.</p>",
+          "childParamsGroups": []
+        }
+      ],
+      "availability": [
+        "business"
+      ],
+      "action": "updated",
+      "category": "organization_custom_property"
+    }
+  },
+  "organization_custom_property_values": {
+    "updated": {
+      "descriptionHtml": "<p>The custom property values of an organization were updated.</p>",
+      "summaryHtml": "<p>This event occurs when there is activity relating to custom property values for an organization.</p>",
+      "bodyParameters": [
+        {
+          "type": "string",
+          "name": "action",
+          "in": "body",
+          "description": "",
+          "isRequired": true,
+          "enum": [
+            "updated"
+          ],
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "enterprise",
+          "in": "body",
+          "description": "<p>An enterprise on GitHub. Webhook payloads contain the <code>enterprise</code> property when the webhook is configured\non an enterprise account or an organization that's part of an enterprise account. For more information,\nsee \"<a href=\"https://docs.github.com/enterprise-cloud@latest//admin/overview/about-enterprise-accounts\">About enterprise accounts</a>.\"</p>",
+          "isRequired": true,
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "installation",
+          "in": "body",
+          "description": "<p>The GitHub App installation. Webhook payloads contain the <code>installation</code> property when the event is configured\nfor and sent to a GitHub App. For more information,\nsee \"<a href=\"https://docs.github.com/enterprise-cloud@latest//apps/creating-github-apps/registering-a-github-app/using-webhooks-with-github-apps\">Using webhooks with GitHub Apps</a>.\"</p>",
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "organization",
+          "in": "body",
+          "description": "<p>A GitHub organization. Webhook payloads contain the <code>organization</code> property when the webhook is configured for an\norganization, or when the event occurs from activity in a repository owned by an organization.</p>",
+          "isRequired": true,
+          "childParamsGroups": []
+        },
+        {
+          "type": "object",
+          "name": "sender",
+          "in": "body",
+          "description": "<p>A GitHub user.</p>",
+          "childParamsGroups": []
+        },
+        {
+          "type": "array of objects",
+          "name": "new_property_values",
+          "in": "body",
+          "description": "<p>The new custom property values.</p>",
+          "isRequired": true,
+          "childParamsGroups": [
+            {
+              "type": "string",
+              "name": "property_name",
+              "description": "<p>The name of the property</p>",
+              "isRequired": true
+            },
+            {
+              "type": "null or string or array",
+              "name": "value",
+              "description": "<p>The value assigned to the property</p>",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "type": "array of objects",
+          "name": "old_property_values",
+          "in": "body",
+          "description": "<p>The old custom property values.</p>",
+          "isRequired": true,
+          "childParamsGroups": [
+            {
+              "type": "string",
+              "name": "property_name",
+              "description": "<p>The name of the property</p>",
+              "isRequired": true
+            },
+            {
+              "type": "null or string or array",
+              "name": "value",
+              "description": "<p>The value assigned to the property</p>",
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "availability": [
+        "business",
+        "organization",
+        "app"
+      ],
+      "action": "updated",
+      "category": "organization_custom_property_values"
     }
   },
   "organization": {

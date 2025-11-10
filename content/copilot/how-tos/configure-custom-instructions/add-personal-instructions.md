@@ -11,6 +11,8 @@ redirect_from:
   - /copilot/how-tos/custom-instructions/adding-personal-custom-instructions-for-github-copilot
   - /copilot/how-tos/custom-instructions/add-personal-instructions
 contentType: how-tos
+category: 
+  - Configure Copilot
 ---
 
 {% data reusables.copilot.personal-instructions-note %}
@@ -47,3 +49,7 @@ Did you successfully add personal custom instructions?
 <a href="https://docs.github.io/success-test/yes.html" target="_blank" class="btn btn-outline mt-3 mr-3 no-underline"><span>Yes</span></a>  <a href="https://docs.github.io/success-test/no.html" target="_blank" class="btn btn-outline mt-3 mr-3 no-underline"><span>No</span></a>
 
 {% endnote %}
+
+## Further reading
+
+* [AUTOTITLE](/copilot/tutorials/customization-library/custom-instructions)—a curated collection of examples
