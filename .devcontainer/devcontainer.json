@@ -3,7 +3,7 @@
 // -
 {
   "name": "cometacos" 
-  "build": {context.payload.sender.login 
+  MISAEL cruz 
     "dockerfile": "Dockerfile",
     // Update 'VARIANT' to pick a Node version
     "args": { "VARIANT": "24" }
